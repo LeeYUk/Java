@@ -13,4 +13,5 @@
 23-02-21 ,day16  java입니다.<br>
 23-02-22 ,day17  java입니다.<br>
 23-03-07 ,day23  java입니다.<br>
-23-03-08 ,day23  java입니다.<br>
+23-03-08 ,day24 java입니다.<br>
+23-03-09 ,day25  java입니다.<br>
