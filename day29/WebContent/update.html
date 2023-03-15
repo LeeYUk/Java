@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원정보 가입</title>
+
+<script type ="text/javascript">
+	alert('회원가입');
+</script>
+
+<style type ="text/css">
+	body{ /*태그선택 */
+		background: #18de02;
+	}
+	
+	button{
+		background: pink;
+	}
+		
+	.t1 {/* 클래스 선택*/
+		background: yellow;
+		width:150px;
+		text-align: center;
+	}	
+	
+	#b1{ /*아이디 호출때 #*/
+		background: red;
+	}
+	#b2{
+	background: blue;
+	color: white;
+	}
+</style>
+
+</head>
+<body>
+<h3>회원정보 가입</h3>
+
+<a href="member.html"><button id="b1">회원정보페이지</button></a>
+<hr>
+<!-- form의 action은 무조건 jsp여야함 -->
+<form action ="update.jsp">
+
+<table >
+	<tr>
+		<td class="t1">id</td>
+		<td> 
+		<input name="id">
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td class="t1">tel</td>
+		<td> 
+		<input name="tel">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" class="t1"><button id="b2">값 변경</button> </td>
+	</tr>
+	
+	
+</table>
+</form>
+</body>
+</html>
