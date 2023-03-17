@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원정보 가입</title>
+
+<script type ="text/javascript">
+	alert('게시판 페이지');
+</script>
+
+<style type ="text/css">
+	body{ /*태그선택 */
+		background: #037Bfc;
+	}
+	
+	button{
+		background: 18de02;
+	}
+		
+	.t1 {/* 클래스 선택*/
+		background: yellow;
+		width:150px;
+		text-align: center;
+	}	
+	
+	#b1{ /*아이디 호출때 #*/
+		background: red;
+	}
+	#b2{
+	background: blue;
+	color: white;
+	}
+</style>
+
+</head>
+<body>
+<h3>회원정보 가입</h3>
+
+<a href="bbs.html"><button id="b1">회원정보페이지</button></a>
+<hr>
+
+<form action ="insert2.jsp">
+<table >
+	
+	<tr>
+		<td class="t1">title</td>
+		<td> 
+		<input name="title">
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="t1">content</td>
+		<td> 
+		<input name="content">
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="t1">writer</td>
+		<td> 
+		<input name="writer">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" class="t1"><button id="b2">글쓰기</button> </td>
+	</tr>
+	
+	
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원정보 가입</title>
+
+<script type="text/javascript">
+	alert('게시판정보 페이지입니다. 반갑습니다.!')
+</script>
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: #037BFC;
+}
+
+button {
+	background: #18DE02;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+</style>
+
+</head>
+<body>
+<h3>회원정보 수정</h3>
+
+<a href="bbs.html"><button id="b1">회원정보수정</button></a>
+<hr>
+<!-- form의 action은 무조건 jsp여야함 -->
+<form action ="update2.jsp">
+
+<table >
+	<tr>
+		<td class="t1">no</td>
+		<td> 
+		<input name="no">
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td class="t1">content</td>
+		<td> 
+		<input name="content">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" class="t1"><button id="b2">값 변경</button> </td>
+	</tr>
+	
+	
+</table>
+</form>
+</body>
+</html>

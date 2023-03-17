@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: #037BFC;
+}
+
+button {
+	background: #18DE02;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h3>음악 검색</h3>
+
+<hr>
+
+<a href="http://localhost:8888/webTest/one2.jsp?id=1">
+	<button style="background: pink">1</button>
+</a>
+
+<a href="http://localhost:8888/webTest/one2.jsp?id=2">
+	<button style="background: pink">2</button>
+</a>
+
+<a href="http://localhost:8888/webTest/one2.jsp?id=3">
+	<button style="background: pink">3</button>
+</a>
+	
+<form action="one2.jsp" method="get">
+
+<table>
+
+	<tr>
+		<td class="t1">검색할 id:</td>
+		<td> 
+		<input name="id">
+		</td>
+	</tr>
+	
+
+	
+	<tr>
+		<td colspan="2" class="t1"><button id="b2">데이터전송</button> </td>
+	</tr>
+	
+	
+</table>
+</form>
+</body>
+</html>

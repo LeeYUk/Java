@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원정보 가입</title>
+
+
+
+<style type ="text/css">
+	
+	button{
+		background: pink;
+	}
+		
+	.t1 {/* 클래스 선택*/
+		background: yellow;
+		width:150px;
+		text-align: center;
+	}	
+	
+	#b1{ /*아이디 호출때 #*/
+		background: red;
+	}
+	#b2{
+	background: blue;
+	color: white;
+	}
+</style>
+
+</head>
+<body>
+<h3>product</h3>
+
+<a href="product.html"><button id="b1">product</button></a>
+<hr>
+<!-- form의 action은 무조건 jsp여야함 -->
+<form action ="insert3.jsp">
+
+<table >
+	<tr>
+		<td class="t1">id</td>
+		<td> 
+		<input name="id">
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="t1">name</td>
+		<td> 
+		<input name="name">
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="t1">content</td>
+		<td> 
+		<input name="content">
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="t1">price</td>
+		<td> 
+		<input name="price">
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="t1">company</td>
+		<td> 
+		<input name="company">
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="t1">img</td>
+		<td> <input name="img" type="file"></td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" class="t1"><button id="b2">인자 전달</button> </td>
+	</tr>
+	
+	
+</table>
+</form>
+</body>
+</html>
