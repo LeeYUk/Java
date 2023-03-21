@@ -21,4 +21,4 @@
 23-03-15 ,day29  jsp입니다.<br>
 23-03-16 ,day30  jsp입니다.<br>
 23-03-17 ,day31  jsp입니다.<br>
-23-03-21 ,day33  servlet,js.<br>
+23-03-21 ,day33  servlet,js입니다.<br>
