@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function word(){
+		idValue = document.getElementById("user").value
+		divTag = document.getElementById("result")
+		if (idValue.length >= 5) {
+			divTag.innerHTML  = "<img src=img/yes.jpg width=500 height = 300>"
+		} 
+		else {
+			divTag.innerHTML  = "<img src=img/no.jpg width=500 height = 300>"
+		}
+	
+}
+function pass() {
+	pw1Value = document.getElementById("pw").value	
+	pw2Value = document.getElementById("pw2").value	
+	divTag = document.getElementById("result")
+	
+	if (pw1Value == pw2Value) {
+		//divTag.innerHTML  = "<img src=img/yes.jpg width=500 height = 300>"
+		location.href= "http://www.naver.com"
+	} else {
+		
+		//divTag.innerHTML  = "<img src=img/no.jpg width=500 height = 300>"
+		location.href= "http://www.daum.com"
+	}
+}
+</script>
+</head>
+<body>
+아이디:<input id="user"><button onclick="word()">글자수 체크</button><br>
+패스워드:<input id="pw" ><br>
+패스워드 확인:<input id="pw2" >
+<button onclick="pass()">패스워드 중복검사</button>
+<hr>
+<div id="result" style="color:red; background: yellow; width: 500px; height: 50px; font-size: 30px">결과.</div>
+</body>
+</html>

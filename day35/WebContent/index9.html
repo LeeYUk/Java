@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		$("#b1").click(function() {
+			food=$("#food").val()
+			where=$("#where").val()
+			alert("당신이 먹고싶은음식은 "+food+"이고, 가고싶은곳은 "+where);
+		})
+		
+		$('#b2').click(function() {
+			s = $('#site').val()
+			if (s == 'movie') {
+				location.href = "http://cgv.co.kr"
+			} else {
+				location.href = "http://www.15881588.com/condo/sub_tab.html?goods_no=859&def_pno=8889"
+			}
+		})
+	});
+</script>
+</head>
+<body>
+id:<input id="food" value="밥"> <input id="where" value="집">
+<button id="b1">누르시오</button><br>
+<button id="b2">누르시오</button>
+</body>
+</html>
