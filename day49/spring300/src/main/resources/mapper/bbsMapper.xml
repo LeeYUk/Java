@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="bbs">
+	
+	
+	<insert id="create" parameterType="bbsVO">
+		insert into bbs values (null, #{title}, #{content}, #{writer})
+	</insert>
+	
+	
+	
+</mapper>
