@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- 싱글톤 객체를 만들때 설정하기 어노테이션으로 싱들톤 생성이 불가능할때 사용 1)mybatis 2)dbcp: mybatis에 
+		dbcp 주입 3)mybatis config: mybatis설정 담당 -->
+
+	<!-- 1)mybatis -->
+	<!--DBCP dbcp=new DBCP(); jdbc의 1,2단계 -->
+	<bean id="my" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="config"></constructor-arg>
+	</bean>
+
+	<!-- 2)dbcp -->
+	<bean id="dbcp" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/multi"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="Good15951@"></property>
+	</bean>
+
+	<!-- 3)mybatis config -->
+	<bean id="config" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dbcp"></property>
+		<property name="configLocation"
+			value="classpath:mybatis-config.xml"></property>
+	</bean>
+		
+</beans>
